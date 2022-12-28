@@ -37,7 +37,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 125px;
+    height: 70px;
 }
 
 nav ul li {
@@ -215,6 +215,14 @@ hr {
 
 .link-footer p:hover {
     text-decoration: underline;
+}
+
+.alinhar {
+    text-align: center;
+}
+
+.curriculo img {
+    margin-top: 15px;
 }
 
 /*Media queries*/
@@ -458,16 +466,26 @@ hr {
     }
     
     .link-footer {
-        width: 33.333%;
+        width: 10%;
         margin-left: 50px;
         margin-right: 50px;
     }
 
     .link-footer img {
-        width: 80px;
+        margin-left: 5px;
+        width: 50px;
+    }
+
+    .curriculo img {
+        margin-top: 15px;
     }
 
     .link-footer p:hover {
         text-decoration: underline;
+    }
+
+    .alinhar {
+        text-align: center;
+        margin-left: 6px;
     }
 }

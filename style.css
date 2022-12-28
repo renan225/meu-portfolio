@@ -1,0 +1,474 @@
+/*Configuração de fonte e background*/
+@import url('https://fonts.cdnfonts.com/css/carmen-sans');
+
+body {
+    font-family: 'Carmen Sans', sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+/*resetando css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Formatações gerais*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*Barra de navegação*/
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 125px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+nav ul li a:hover {
+    color: #703E78;
+}
+
+.logo {
+    color: #BA68C8;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/*Parte inicial (texto "seja bem vindo...")*/
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-bemvindo {
+    width: 50%;
+    margin-top: 25px;
+}
+
+.texto-bemvindo h1 {
+    font-size: 40px;
+}
+.texto-bemvindo p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.texto-bemvindo p a {
+    font-weight: 700;
+    color: #BA68C8;
+}
+
+.texto-bemvindo p a:hover {
+    text-decoration: underline;
+}
+
+.img-capa {
+    width: 50%;
+}
+
+/*Habilidades*/
+#habilidades {
+    margin-top: 150px;
+}
+
+.todas-habilidades {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 72px 0;
+}
+
+.habilidades {
+    width: 170px;
+    height: 170px;
+    background: rgba(192, 188, 188, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.habilidades img {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.javascript img {
+    width: 170px;
+    padding-right: 5px;
+}
+
+.axios img {
+    width: 135px;
+}
+
+.react img {
+    width: 150px;
+}
+
+.habilidades p {
+    margin-top: 20px;
+}
+
+.javascript p {
+    margin-top: 25px;
+}
+
+.react p {
+    margin-top: 30px;
+}
+
+.axios p {
+    margin-top: 25px;
+}
+
+/*Projetos*/
+
+.projeto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.projeto img {
+    width: 551px;
+    height: 340px;
+    margin-right: 15px;
+}
+
+.projeto img:hover {
+    border: 2px solid #BA68C8;
+    border-radius: 50px;
+}
+
+.projeto p {
+    margin-top: 80px;
+    width: 95%;
+    font-size: 15px;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+}
+
+.veja-portfolio-figma {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+.veja-portfolio-figma a:hover {
+    color: #703E78;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-footer {
+    margin: 50px 100px 50px 100px;
+}
+
+.link-footer p:hover {
+    text-decoration: underline;
+}
+
+/*Media queries*/
+@media (min-width: 769px) {
+    .container {
+        min-width: 768px;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-width: 320px;
+        max-width: 768px;
+        margin: 0 auto;
+        border: 1px solid red;
+        padding: 50px;
+    }
+
+    /*Barra de navegação*/
+
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .mobile-menu .nav-item a:hover {
+        background: rgba(186, 104, 200, 0.37);
+        display: block;
+    }
+
+    .open {
+       display: block; 
+    }
+
+    /*Parte inicial (texto "seja bem vindo...")*/
+    .home {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .texto-bemvindo {
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .texto-bemvindo h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .texto-bemvindo p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .img-capa {
+        margin-top: 72px;
+        width: 100%;
+    }
+
+    /*Habilidades*/
+    #habilidades {
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .todas-habilidades {
+        display: flex;
+        justify-content: space-around;
+        margin: 72px 0 72px 0;
+        flex-wrap: wrap;
+    }
+
+    .habilidades {
+        width: 200px;
+        height: 200px;
+        background: rgba(192, 188, 188, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 100px;
+    }
+
+    .habilidades img {
+        width: 120px;
+        margin-top: 15px;
+    }
+
+    .javascript img {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .javascript p {
+        margin-left: 10px;
+    }
+
+    .axios img {
+        width: 160px;
+    }
+
+    .react img {
+        width: 175px;
+    }
+
+    .habilidades p {
+        margin-top: 20px;
+    }
+
+    .javascript p {
+        margin-top: 25px;
+    }
+
+    .react p {
+        margin-top: 30px;
+    }
+
+    .axios p {
+        margin-top: 25px;
+    }
+
+    /*Projetos*/
+
+    .projeto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;       
+        align-items: center;
+    }
+
+    .projeto1-img {
+        order: 0;
+    }
+
+    .projeto1-texto{
+       order: 1;
+    }
+
+    .projeto2-img {
+        order: 2;
+    }
+
+    .projeto2-texto{
+       order: 3;
+    }
+
+    .projeto3-img {
+        order: 4;
+    }
+
+    .projeto3-texto{
+       order: 5;
+    }
+
+    .projeto4-img {
+        order: 6;
+    }
+
+    .projeto4-texto {
+        order: 7;
+    }
+
+    .projeto5-img{
+       order: 8;
+    }
+
+    .projeto5-texto {
+        order: 9;
+    }
+
+    .projeto img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projeto p {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .projeto h4 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /*footer*/
+    footer {
+        text-align: center;
+    }
+
+    .veja-portfolio-figma {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 92px 0;
+        width: 100%;
+    }
+
+    .veja-portfolio-figma a:hover {
+        color: #703E78;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .links-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .link-footer {
+        width: 33.333%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .link-footer img {
+        width: 80px;
+    }
+
+    .link-footer p:hover {
+        text-decoration: underline;
+    }
+}

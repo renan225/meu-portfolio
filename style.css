@@ -213,16 +213,8 @@ hr {
     margin: 50px 100px 50px 100px;
 }
 
-.link-footer p:hover {
-    text-decoration: underline;
-}
-
-.alinhar {
-    text-align: center;
-}
-
 .curriculo img {
-    margin-top: 15px;
+        margin-bottom: 14px;
 }
 
 /*Media queries*/
@@ -477,15 +469,6 @@ hr {
     }
 
     .curriculo img {
-        margin-top: 15px;
-    }
-
-    .link-footer p:hover {
-        text-decoration: underline;
-    }
-
-    .alinhar {
-        text-align: center;
-        margin-left: 6px;
+        margin-top: 17px;
     }
 }

@@ -213,8 +213,8 @@ hr {
     margin: 50px 100px 50px 100px;
 }
 
-.curriculo img {
-        margin-bottom: 14px;
+.link-footer i {
+    font-size: 80px;
 }
 
 /*Media queries*/
@@ -463,12 +463,7 @@ hr {
         margin-right: 50px;
     }
 
-    .link-footer img {
-        margin-left: 5px;
-        width: 50px;
-    }
-
-    .curriculo img {
-        margin-top: 17px;
+    .link-footer i {
+        font-size: 40px;
     }
 }

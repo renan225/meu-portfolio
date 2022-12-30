@@ -110,31 +110,13 @@ nav ul li a:hover {
 }
 
 .habilidades {
-    width: 170px;
-    height: 170px;
-    background: rgba(192, 188, 188, 0.2);
-    border-radius: 20px;
     text-align: center;
-    padding: 5px;
     margin-bottom: 100px;
 }
 
 .habilidades img {
-    width: 100px;
+    width: 90%;
     margin-top: 15px;
-}
-
-.javascript img {
-    width: 170px;
-    padding-right: 5px;
-}
-
-.axios img {
-    width: 135px;
-}
-
-.react img {
-    width: 150px;
 }
 
 .habilidades p {
@@ -190,8 +172,8 @@ footer {
 .veja-portfolio-figma {
     display: flex;
     margin-top: 70px;
-    margin-left: 300px;
     margin-bottom: 100px;
+    justify-content: center;
 }
 
 .veja-portfolio-figma a:hover {
@@ -319,51 +301,17 @@ hr {
     }
 
     .habilidades {
-        width: 200px;
-        height: 200px;
-        background: rgba(192, 188, 188, 0.2);
         border-radius: 20px;
         text-align: center;
-        padding: 5px;
         margin-bottom: 100px;
     }
 
     .habilidades img {
-        width: 120px;
         margin-top: 15px;
-    }
-
-    .javascript img {
-        width: 200px;
-        margin-right: 10px;
-    }
-
-    .javascript p {
-        margin-left: 10px;
-    }
-
-    .axios img {
-        width: 160px;
-    }
-
-    .react img {
-        width: 175px;
     }
 
     .habilidades p {
         margin-top: 20px;
-    }
-
-    .javascript p {
-        margin-top: 25px;
-    }
-
-    .react p {
-        margin-top: 30px;
-    }
-
-    .axios p {
-        margin-top: 25px;
     }
 
     /*Projetos*/
@@ -373,6 +321,10 @@ hr {
         justify-content: center;
         flex-direction: column;       
         align-items: center;
+    }
+
+    .titulo-projetos {
+        text-align: center;
     }
 
     .projeto1-img {
@@ -433,15 +385,16 @@ hr {
     }
 
     /*footer*/
+
     footer {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
     }
 
     .veja-portfolio-figma {
-        display: flex;
-        justify-content: center;
-        margin: 50px 0 92px 0;
-        width: 100%;
+        margin: 37px 0 37px 0;
     }
 
     .veja-portfolio-figma a:hover {

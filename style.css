@@ -311,7 +311,7 @@ hr {
 
     .habilidades {
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 
     .habilidades img {
@@ -390,6 +390,15 @@ hr {
     .projeto h4 {
         margin-top: 20px;
         text-align: center;
+    }
+
+    .projeto a {
+        text-decoration: underline;
+    }
+
+    .projeto a:hover {
+        text-decoration: underline;
+        color: #703E78;
     }
 
     /*footer*/
